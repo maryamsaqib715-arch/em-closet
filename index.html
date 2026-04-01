@@ -103,12 +103,13 @@
 
         .buy-btn:hover { background-color: var(--medium-purple); }
         .hero-banner {
-    height: 900px;
-    /* Image ko yahan link karein */
-    background: linear-gradient(rgba(75, 44, 94, 0.4), rgba(75, 44, 94, 0.4)), 
-                url('./banner.png'); 
+ height: 900px;
+    background-color: #4B2C5E; /* Image load hone tak purple color dikhega */
+    background-image: linear-gradient(rgba(75, 44, 94, 0.4), rgba(75, 44, 94, 0.4)), 
+                      url('banner.png'); /* Yahan se ./ hata kar dekhein */
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
