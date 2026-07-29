@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Retro Threads Purple</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
+
+        :root {
+            --dark-purple: #4B2C5E;
+            --medium-purple: #8E44AD;
+            --light-purple: #D8BFD8;
+            --soft-lilac: #F3E5F5;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--soft-lilac) 0%, var(--light-purple) 100%);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Consistent Navigation */
+        header { 
+            background-color: var(--dark-purple); 
+            padding: 20px; 
+            text-align: center; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        nav ul { 
+            list-style: none; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center; 
+            gap: 25px; 
+            margin: 0; 
+        }
+        nav ul li a { 
+            text-decoration: none; 
+            color: var(--light-purple); 
+            font-weight: 600; 
+            text-transform: uppercase; 
+            font-size: 13px; 
+            transition: 0.3s;
+        }
+        nav ul li a:hover { color: white; }
+
+        /* Contact Box Styling */
+        .contact-container {
+            max-width: 600px;
+            margin: auto;
+            background: var(--dark-purple); /* Dark Purple Box */
+            padding: 50px;
+            border-radius: 30px;
+            color: white;
+            border: 4px solid var(--medium-purple);
+            box-shadow: 15px 15px 0px var(--light-purple); /* Retro Purple Shadow */
+            text-align: center;
+        }
+
+        h2 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 3rem; 
+            margin-top: 0; 
+            color: var(--light-purple);
+        }
+
+        p { color: var(--soft-lilac); margin-bottom: 30px; }
+
+        input, textarea {
+            width: 100%; 
+            padding: 15px; 
+            margin-top: 15px;
+            border-radius: 12px; 
+            border: 2px solid var(--medium-purple);
+            background-color: var(--soft-lilac);
+            color: var(--dark-purple);
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: var(--medium-purple);
+            opacity: 0.7;
+        }
+
+        .send-btn {
+            background-color: var(--light-purple); 
+            color: var(--dark-purple);
+            padding: 18px 40px; 
+            border: none; 
+            border-radius: 50px;
+            font-weight: bold; 
+            font-size: 1.1rem;
+            margin-top: 30px; 
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s ease;
+            box-shadow: 0px 5px 0px var(--medium-purple);
+        }
+
+        .send-btn:hover { 
+            background-color: white; 
+            transform: translateY(-3px);
+            box-shadow: 0px 8px 0px var(--medium-purple);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="indexcloset.html">Home</a></li>
+                <li><a href="logincloset.html">Login</a></li>
+                <li><a href="signupcloset.html">Sign Up</a></li>
+                <li><a href="contactcloset.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <h2>Get in Touch</h2>
+        <p>Have a question about our purple vintage collection? Send us a message!</p>
+        
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email Address" required>
+            <textarea rows="4" placeholder="How can we help you today?" required></textarea>
+            
+            <button type="submit" class="send-btn">Send Lavender Love</button>
+        </form>
+    </main>
+
+</body>
+</html>
